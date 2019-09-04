@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>assignment ch 4, qn no 4</title>
+    <script>
+        // gets all the addres and display together .
+        function fulladdres() {
+            let name = document.getElementById("t1").value;
+            let street = document.getElementById("t2").value;
+            let city = document.getElementById("t3").value;
+            let state = document.getElementById("t4").value;
+            let zipcode = document.getElementById("t5").value;
+            document.getElementById("d1").innerHTML = name +"\n " + street +  "\n "  + city + ", " + state + "  " + zipcode;
+        }
+
+    </script>
+</head>
+
+<body>
+    <label>Name</label>
+    <input type="text" id="t1">
+    <br>
+    <br>
+    <label>Street</label>
+    <input type="text" id="t2">
+    <br>
+    <br>
+    <label>City</label>
+    <input type="text" id="t3">
+    <label>State </label>
+    <input type="text" id="t4">
+    <label>Zip code</label>
+    <input type="number" id="t5">
+    <br>
+    <br>
+    <button onclick="fulladdres()">Make Addrees</button>
+    <br>
+    <br>
+    <div id='d1'></div>
+</body>
+
+</html>
