@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset ="utf-8">
+    <title>volume in quart </title>
+    <script>
+        /*
+        input -volume in quarth 
+        processing 
+        -convert in to litters(volume*0.946)
+        -handel float number
+        out put - litter
+        */
+        function volume_quart(){
+            let vol_qurt =parseFloat(document.getElementById("t1").value)
+             let volume = vol_qurt*0.946;
+            document.getElementById("output").innerHTML= volume;
+             
+        }
+    </script>
+</head>
+
+<body>
+    <lable>volume quarter </lable>
+<input type ="text" id="t1">
+
+
+<br>
+<br>
+<button onclick="volume_quart()">convert</button>
+<br>
+<br>
+<div id="output"></div>
+
+</body>
+
+</html>

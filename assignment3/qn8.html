@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset ="utf-8">
+    <title>Total Number Of Stack </title>
+    <script>
+        function num_stack(){
+            let S=parseFloat(document.getElementById("t1").value)
+            let L =parseFloat(document.getElementById("t2").value)
+             let length= S+(8*S*S)/(3*5) ;
+            document.getElementById("output").innerHTML= length;
+             
+        }
+    </script>
+</head>
+
+<body>
+    <lable> Distance Span</lable>
+    <input type ="text" id="t1">
+    <br>
+    <br>
+    
+    <label>Distance sag</label>
+    <br>
+    <input type ="text" id="t2">
+
+
+<br>
+<br>
+<button onclick="num_stack()">convert</button>
+<br>
+<br>
+<div id="output"></div>
+
+</body>
+
+</html>

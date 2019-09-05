@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset ="utf-8">
+    <title>comp_milage </title>
+    <script>
+        /*
+          input - begining of odometer
+                - ending odometer
+           processing -to get the milage i substracted
+                       begining odometer from ending odommeter
+                       -handl real number 
+          output - milage 
+        */
+        function comp_milage(){
+            let A =parseInt(document.getElementById("t1").value)
+            let B =parseInt(document.getElementById("t2").value)
+            let c =parseInt(document.getElementById("t3").value)
+             let mileage= B-(A/c);
+            document.getElementById("output").innerHTML= mileage;
+             
+        }
+    </script>
+</head>
+
+<body>
+    <lable>begining odometer</lable>
+<input type ="text" id="t1">
+<br>
+<br>
+<lable> ending odometer</lable>
+<input type ="text" id="t2">
+<br>
+<br>
+<lable> Gallon</lable>
+<input type ="text" id="t3">
+
+
+<br>
+<br>
+<button onclick="comp_milage()">comput mileage</button>
+<br>
+<br>
+<div id="output"></div>
+
+</body>
+
+</html>

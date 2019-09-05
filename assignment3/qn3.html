@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset ="utf-8">
+    <title>volume in quart </title>
+    <script>
+        /*
+        input - box in each stack
+              - total box's
+        processing
+               - total boxes divided by boxes in each stack
+        output
+             -number of stack 
+        */
+        function num_stack(){
+            let a =parseFloat(document.getElementById("t1").value)
+            let b =parseFloat(document.getElementById("t2").value)
+             let total_s = Math.ceil(a/b);
+            document.getElementById("output").innerHTML= total_s;
+             
+        }
+    </script>
+</head>
+
+<body>
+    <lable>Total Box </lable>
+    <input type ="text" id="t1">
+    <br>
+    <br>
+
+    <label>Box In Each Stack</label>
+    <br>
+    <input type ="text" id="t2">
+
+
+<br>
+<br>
+<button onclick="num_stack()">Total</button>
+<br>
+<br>
+<div id="output"></div>
+
+</body>
+
+</html>

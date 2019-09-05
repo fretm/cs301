@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset ="utf-8">
+    <title>Heart Rate</title>
+    <script>
+        /*
+        input - age 
+        processing -to find the heart rate per minute minues age from 220
+        -to get the maximum 220 -age /0.085
+        --to get the maximum 220 -age /0.085
+
+        output - maximum and minimum heart rate per minuite 
+        */
+        function heart_rate_cal(){
+            let age =parseInt(document.getElementById("t1").value)
+             let max = 220-age/0.85;
+             let min =220 -age/0.65;
+            document.getElementById("output").innerHTML= "max ="+" "+max+ " "+  " min =" + " "+min;
+             
+        }
+    </script>
+</head>
+
+<body>
+    <lable>AGE </lable>
+<input type ="text" id="t1">
+
+
+<br>
+<br>
+<button onclick="heart_rate_cal()">convert</button>
+<br>
+<br>
+<div id="output"></div>
+
+</body>
+
+</html>

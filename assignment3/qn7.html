@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset ="utf-8">
+    <title>Calculate After Tax  </title>
+    <script>
+
+    /*
+    input- wage 
+         - regular hour
+     
+    processing - multiply wage by hour
+                - result multiplyes by 0.15
+
+
+    output - salary after tax 
+    */
+        function cal_after_tax(){
+            let a =parseInt(document.getElementById("t1").value)
+            let b =parseInt(document.getElementById("t2").value)
+             let after_tax = a*b*0.5;
+            document.getElementById("output").innerHTML= after_tax;
+             
+        }
+    </script>
+</head>
+
+<body>
+    <lable>Regular Houre </lable>
+    <input type ="text" id="t1">
+    <br>
+    <br>
+    
+    <label>Employe Wage</label>
+    <input type ="text" id="t2">
+
+
+<br>
+<br>
+<button onclick="cal_after_tax()">convert</button>
+<br>
+<br>
+<div id="output"></div>
+
+</body>
+
+</html>

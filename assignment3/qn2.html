@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset ="utf-8">
+    <title> </title>
+    <script>
+        /*
+        input - distance in killometer
+        processing - convert killometer to miles(killometer*0.6217)
+                   - handle real number 
+        output -mile
+        */
+        function conv_mile(){
+            let k =parseFloat(document.getElementById("t1").value)
+             let milage = k*0.6217;
+            document.getElementById("output").innerHTML= milage;
+             
+        }
+    </script>
+</head>
+
+<body>
+    <lable>killometer to miles </lable>
+<input type ="text" id="t1">
+
+
+<br>
+<br>
+<button onclick=" conv_mile()">convert</button>
+<br>
+<br>
+<div id="output"></div>
+
+</body>
+
+</html>
